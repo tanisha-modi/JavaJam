@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+*{
+    margin: 0;
+}.nav{
+    z-index: 5;
+    background-image: url(../images/Rectangle\ 1.png);
+    position: fixed;
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #00B4CF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #00B4CF;
+    margin-left: 6rem;
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+    padding-top: 0.1rem ;
+    font-family: 'Aclonica', sans-serif;
+    cursor: pointer;
+}
+.logoLink{
+    text-decoration: none;
+}
+.buttons{
+    border-radius: 25px;
+    margin: 2rem 2rem;
+    padding: 0.7rem 1rem;
+    padding-top: 0.3rem ;
+    /* background-image: radial-gradient( 
+        rgb(49, 52, 106)0%,
+        rgba(49, 52, 106, 0.5) 50%,
+        rgb(10, 10, 63)90%
+    ); */
+}
+.navBtn{
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 15px;
+    color: #00B4CF;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+.contactBtn{
+    background: white;
+}
+.downloadBtn{
+    color: white;
+    background-color: #5AC6F2;
+}

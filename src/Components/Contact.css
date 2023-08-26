@@ -1,0 +1,29 @@
+.contact{
+    height: 100vh;
+    background-image: url(../images/Rectangle\ 1.png);
+    background-repeat: no repeat;
+    background-size: cover;
+}
+.body{
+    /* margin-right: 4rem; */
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    z-index: 2;
+}
+.left > img{
+    margin-top: 12rem;
+    height: 34rem;
+    width: 30rem;
+}
+.right{
+    margin-top: 8vh;
+    z-index: 1;
+    border-radius: 20px;
+    margin-left: -8.5rem;
+    height: 90vh;
+    width: 70%;
+    background: white;
+}

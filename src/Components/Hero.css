@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+.hero{
+    height: 100vh;
+    background-image: url(../images/Rectangle\ 1.png);
+    background-repeat: no repeat;
+    background-size: cover;
+    /* background-image: linear-gradient( 
+        135deg,
+        rgb(79, 80, 146, 0.5) 0%,
+        rgb(0, 181, 209, 0.5) 90%
+    ); */
+}
+.upper{  
+    padding-top: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.upper > h1{
+    color: #4E4F90;
+    font-size: 5rem;
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 2px 2px #00B4CF;
+}
+.upper > h5{
+    margin-top: 10px;
+    color: #00B4CF;
+    font-size: 1.8rem;
+    /* font-weight: 800; */
+}
+.lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 0;
+    margin-top: 5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    height: 70vh;
+    /* flex-wrap: wrap; */
+}
+.text{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.text > h2{
+    color: #00B4CF;
+    font-size: 4rem;
+}
+.text > span {
+    color: #00B4CF;
+    font-size: 1.5rem;
+}
+.btn{
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+    border-bottom: 3px solid rgb(186, 186, 186);
+    border-right: 4px solid rgb(186, 186, 186);
+    margin: 1rem;
+    border-radius: 40px;
+    background-color: #4E4F90;
+    color: white;
+    width: 12rem;
+    height: 4rem;
+    cursor: pointer;
+}
+p{
+    font-size: 1.2rem;
+    color: #00B4CF
+}
+.link{
+    color: #4E4F90;
+}
+/* .image{
+    height: 23.7rem;
+    width: 49.5rem;
+    background-image: url(../images/Hero.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #00B4CF;
+      -moz-box-shadow: 10px 10px 5px #00B4CF;
+      -webkit-box-shadow: 10px 10px 5px #00B4CF;
+      -khtml-box-shadow: 10px 10px 5px #00B4CF;
+} */
+.imaging > img{
+    height: 25rem;
+    width: 40rem;
+    /* background-image: url(../images/Hero.jpg); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px #00B4CF;
+      -moz-box-shadow: 8px 8px 5px #00B4CF;
+      -webkit-box-shadow: 8px 8px 5px #00B4CF;
+      -khtml-box-shadow: 8px 8px 5px #00B4CF;
+}
