@@ -11,7 +11,7 @@
         rgb(0, 181, 209, 0.5) 90%
     ); */
 }
-.upper{  
+.upper{
     padding-top: 5rem;
     color: white;
     display: flex;
@@ -39,7 +39,7 @@
     margin-top: 5rem;
     margin-left: 6rem;
     margin-right: 6rem;
-    height: 70vh;
+    height: 60vh;
     /* flex-wrap: wrap; */
 }
 .text{
