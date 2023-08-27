@@ -1,25 +1,30 @@
-import React, { useState } from 'react'
-import "./Contact.css"
-import Navbar from './Navbar'
-import contactImage1 from "../images/contactt.png"
+import React, { useState, useRef } from "react";
+import "./Contact.css";
+import contactImage1 from "../images/contactt.png";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+
+  const form = useRef();
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [textArea, setTextArea] = useState("");
 
-  const handleOnChangeName = (event) => {
-    setName(event.target.value);
-  };
-  const handleOnChangeSubject = (event) => {
-    setSubject(event.target.value);
-  };
-  const handleOnChangeEmail = (event) => {
-    setEmail(event.target.value);
-  };
-  const handleOnChangeTextArea = (event) => {
-    setTextArea(event.target.value);
+
+  const sendEmail = (e) => {
+    alert('form submitted');
+    e.preventDefault();
+
+    emailjs.sendForm('service_zxvyimg', 'template_w0numyd', form.current, 'g6JJRhy7HUAyTcDZ7')
+      .then((result) => {
+          console.log(result.text);
+          console.log("query sent");
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      handleRemoveClick();
   };
   const handleRemoveClick = () => {
     setName("");
@@ -28,25 +33,68 @@ function Contact() {
     setTextArea("");
   };
   return (
-    <div className='contact'>
-       <div className="body">
-       <div className="left">
-       <img className="image1" src={contactImage1} alt="" />
-       </div>
-       <div className="right">
-       {/* <img className="image1" src={contactImage2} alt="" /> */}
-       <h1><strong>Contact us</strong></h1>
-       <div className="inputs">
-        <input type="text" onChange={handleOnChangeName} placeholder='First Name' value={name}/>
-        <input type="text" onChange={handleOnChangeEmail} placeholder='Email' value={email}/>
-        <input type="text" onChange={handleOnChangeSubject} placeholder='Subject' value={subject}/>
-       </div>
-        <textarea className='teaxtarea' placeholder='Enter your Query' rows="4" cols="50" value={textArea} onChange={handleOnChangeTextArea}> </textarea>
-        <button className='contactBtn submitBtn' onClick={handleRemoveClick}>Submit</button>
-       </div>
-       </div>
+    <div className="contact">
+      <div className="body">
+        <div className="left">
+          <img className="image1" src={contactImage1} alt="" />
+        </div>
+        <div className="right">
+          <h1>
+            <strong>Contact us</strong>
+          </h1>
+          <form ref={form} onSubmit={sendEmail}>
+            <input
+              type="text"
+              placeholder="First Name"
+              name="user_name"
+              value={name}
+              onChange={event => setName(event.target.value)}
+              autoComplete="off"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="user_email"
+              value={email}
+              onChange={event => setEmail(event.target.value)}
+              autoComplete="off"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+              value={subject}
+              onChange={event => setSubject(event.target.value)}
+              autoComplete="off"
+              required
+            />
+            <textarea
+              name="query"
+              className="teaxtarea"
+              placeholder="Enter your Query"
+              rows="4"
+              cols="50"
+              value={textArea}
+              onChange={event => setTextArea(event.target.value)}
+              autoComplete="off"
+              required
+            >
+            </textarea>
+            <button
+              className="contactBtn submitBtn"
+              // onClick={handleRemoveClick}
+              type="submit"
+              value='send'
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+} 
 
-export default Contact
+export default Contact;

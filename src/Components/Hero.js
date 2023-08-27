@@ -15,7 +15,8 @@ function Hero() {
         <div className="text">
           <h2>Become Java Genius with JavaJam</h2>
           <span>Unleash your inner Java genius and reign supreme!</span>
-          <button className="btn">Download</button>
+          <button className="btn"><a href='https://drive.google.com/uc?export=download&id=1SPqRDc-kSGef-LLp9yKcNxetVHNknbP9
+'>Download</a></button>
           <p>
             Already downloaded?{" "}
             <Link className="link" to="/steps">

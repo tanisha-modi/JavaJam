@@ -79,24 +79,9 @@ p{
 .link{
     color: #4E4F90;
 }
-/* .image{
-    height: 23.7rem;
-    width: 49.5rem;
-    background-image: url(../images/Hero.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px #00B4CF;
-      -moz-box-shadow: 10px 10px 5px #00B4CF;
-      -webkit-box-shadow: 10px 10px 5px #00B4CF;
-      -khtml-box-shadow: 10px 10px 5px #00B4CF;
-} */
 .imaging > img{
     height: 25rem;
     width: 40rem;
-    /* background-image: url(../images/Hero.jpg); */
-    /* background-size: cover;
-    background-repeat: no-repeat; */
     border-radius: 10px;
     box-shadow: 8px 8px 5px #00B4CF;
       -moz-box-shadow: 8px 8px 5px #00B4CF;
