@@ -1,5 +1,5 @@
 .steps-container{
-    height: 120vh;
+    /* height: 120vh; */
     padding-top: 3rem;
     background-image: url(../images/Rectangle\ 1.png);
     background-repeat: no repeat;
@@ -8,7 +8,7 @@
 .stepss{
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: center;
 
   }
   .steps-container > h2{
@@ -20,31 +20,44 @@
     margin-bottom: 3rem;
   }
   .steps-left > img{
-    /* position: relative; */
     height: 94vh;
-    width: 90%;
+    width: 80%;
     margin-top: 10vh;
   }
-  .s1  img, .s2 > img{
-    /* position: relative; */
-    height: 17rem;
-    width: 24rem;
+  .s1{
+    display: flex;
+    flex-direction: row;
+  }
+  .arr  img{
+    display: inline;
+    height: 16rem;
+    width: 25rem;
     border-radius: 15px;
+    margin-left: 20px;
+  }
+  .arr{
+    /* display: inline; */
+    height: 16rem;
+    width: 25rem;
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+  .flip{
+    transform: translateX(200px) scaleX(-1);
+  }
+  .arr > .arrow{
+    width: 10rem;
+  }
+  .s1 > img{
+    height: 16rem;
+    width: 25rem;
+    border-radius: 15px;
+    margin-left: 20px;
     box-shadow: 4px 4px 2px #00B4CF;
       -moz-box-shadow: 4px 4px 2px #00B4CF;
       -webkit-box-shadow: 4px 4px 2px #00B4CF;
       -khtml-box-shadow: 4px 4px 2px #00B4CF;
   }
-  step1{
-    margin-left: 3rem;
-    }
-    steps2{
-    margin-left: 2rem;
-
-}
-  .s1{
-    margin-bottom: 10rem;
-  }
-  .s2{
-      margin-top: 10rem;
+  .steps-right p{
+    font-size: 2rem;
   }
