@@ -11,6 +11,7 @@
     overflow: hidden;
     position: relative;
     height: 80vh;
+    transform: scaleY(-1);
     border-radius: 50px;
     box-shadow: 8px 8px 5px #00B4CF;
       -moz-box-shadow: 8px 8px 5px #00B4CF;
@@ -24,7 +25,7 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    transform: scaleY(-1);
+    
     border-radius: 50px;
     
   }

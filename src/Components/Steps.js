@@ -1,6 +1,6 @@
 import React from "react";
 import steps from "../images/steps.png";
-import step1 from "../images/step1.png";
+import step1 from "../images/lastTry.png";
 import "./Steps.css";
 
 function Steps() {

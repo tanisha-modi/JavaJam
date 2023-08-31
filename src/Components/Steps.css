@@ -21,14 +21,14 @@
   }
   .steps-left > img{
     /* position: relative; */
-    height: 100%;
+    height: 94vh;
     width: 90%;
-    margin-top: 10%;
+    margin-top: 10vh;
   }
   .s1  img, .s2 > img{
     /* position: relative; */
-    height: 12rem;
-    width: 20rem;
+    height: 17rem;
+    width: 24rem;
     border-radius: 15px;
     box-shadow: 4px 4px 2px #00B4CF;
       -moz-box-shadow: 4px 4px 2px #00B4CF;
