@@ -1,77 +1,125 @@
-.contact{
-    height: 100vh;
-    background-image: url(../images/Rectangle\ 1.png);
-    background-repeat: no repeat;
-    background-size: cover;
+.contact {
+  height: 100vh;
+  background-image: url(../images/Rectangle\ 1.png);
+  background-repeat: no repeat;
+  background-size: cover;
 }
-.body{
-    margin-right: 6rem;
-    margin-left: 8rem;
+.body {
+  margin-right: 6rem;
+  margin-left: 8rem;
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  z-index: 2;
+}
+.left > img {
+  margin-top: 12rem;
+  height: 34rem;
+  width: 30rem;
+}
+.right {
+  margin-top: 8vh;
+  z-index: 1;
+  border-radius: 20px;
+  margin-left: -8.5rem;
+  height: 90vh;
+  width: 70%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right > h1 {
+  color: #00b4cf;
+  font-size: 3rem;
+}
+form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputdata {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
     display: flex;
-    flex-direction: row;
-}
-.left{
-    z-index: 2;
-}
-.left > img{
-    margin-top: 12rem;
-    height: 34rem;
-    width: 30rem;
-}
-.right{
-    margin-top: 8vh;
-    z-index: 1;
-    border-radius: 20px;
-    margin-left: -8.5rem;
-    height: 90vh;
-    width: 70%;
-    background: white;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0.5px solid rgba(0,0,0, 0.22);
+    background: rgba(168, 162, 196, 0.22);
 }
-.right > h1{
-    color: #00B4CF;
-    font-size: 3rem;
+
+input {
+  color: #4E4F90;
+  background: transparent;
+  display: block;
+  width: 80%;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  padding: 10px;
+  padding-bottom: 4px;
+  border: none;
 }
-form{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.inputdata label {
+     left: auto;
+     width: 80%;
+    color: #3498db;
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
 }
-input{
-    width: 80%;
-    display: block;
-    margin-top: 15px;
-    font-size: 1.2rem;
-    padding: 10px;
-    padding-bottom: 4px;
-    border: none;
-    border-bottom: 0.5px solid black;
+.inputdata input:focus ~ label,
+.inputdata input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 0.8rem;
+  color: #3498db;
 }
-textarea:focus, input:focus{
-    outline: none;
+.inputdata input.has-content + label{
+    transform: translateY(-20px);
+  font-size: 0.8rem;
+  color: #3498db;
 }
-textarea{
-    font-size: 1.2rem;
-    margin-top: 25px;
-    padding: 10px;
-    width: 85%;
+
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before {
+  transform: scale(1);
 }
-.submitBtn{
-    margin-top: 15px;
-    width: 15rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 15px;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding: 0.8rem;
-    cursor: pointer;
-    color: white;
-    background-color: #00B4CF;
+.inputdata .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
+textarea:focus,
+input:focus {
+  outline: none;
+}
+textarea {
+    background: rgba(168, 162, 196, 0.22);
+  font-size: 1.2rem;
+  margin-top: 25px;
+  padding: 10px;
+  width: 85%;
+}
+.submitBtn {
+  margin-top: 15px;
+  width: 15rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0.8rem;
+  cursor: pointer;
+  color: white;
+  background-color: #00b4cf;
 }

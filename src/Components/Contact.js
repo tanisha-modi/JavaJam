@@ -4,27 +4,34 @@ import contactImage1 from "../images/contactt.png";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
-
   const form = useRef();
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [textArea, setTextArea] = useState("");
 
-
   const sendEmail = (e) => {
-    alert('form submitted');
+    alert("form submitted");
     e.preventDefault();
 
-    emailjs.sendForm('service_zxvyimg', 'template_w0numyd', form.current, 'g6JJRhy7HUAyTcDZ7')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_zxvyimg",
+        "template_w0numyd",
+        form.current,
+        "g6JJRhy7HUAyTcDZ7"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
           console.log("query sent");
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
 
-      handleRemoveClick();
+    handleRemoveClick();
   };
   const handleRemoveClick = () => {
     setName("");
@@ -43,33 +50,40 @@ function Contact() {
             <strong>Contact us</strong>
           </h1>
           <form ref={form} onSubmit={sendEmail}>
+            <div className="inputdata">
+              <input
+                type="text"
+                name="user_name"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+                autoComplete="off"
+                required
+              />
+              <label htmlFor="user_name">Name</label>
+            </div>
+            <div className="inputdata">
             <input
-              type="text"
-              placeholder="First Name"
-              name="user_name"
-              value={name}
-              onChange={event => setName(event.target.value)}
-              autoComplete="off"
-              required
-            />
-            <input
+             className={email ? 'has-content' : ''}
               type="email"
-              placeholder="Email"
               name="user_email"
               value={email}
-              onChange={event => setEmail(event.target.value)}
+              onChange={(event) => setEmail(event.target.value)}
               autoComplete="off"
               required
             />
+            <label htmlFor="user_email">Email</label>
+            </div>
+            <div className="inputdata">
             <input
               type="text"
-              placeholder="Subject"
               name="user_subject"
               value={subject}
-              onChange={event => setSubject(event.target.value)}
+              onChange={(event) => setSubject(event.target.value)}
               autoComplete="off"
               required
             />
+            <label htmlFor="user_subject">Subject</label>
+            </div>
             <textarea
               name="query"
               className="teaxtarea"
@@ -77,16 +91,14 @@ function Contact() {
               rows="4"
               cols="50"
               value={textArea}
-              onChange={event => setTextArea(event.target.value)}
+              onChange={(event) => setTextArea(event.target.value)}
               autoComplete="off"
               required
-            >
-            </textarea>
+            ></textarea>
             <button
               className="contactBtn submitBtn"
-              // onClick={handleRemoveClick}
               type="submit"
-              value='send'
+              value="send"
             >
               Submit
             </button>
@@ -95,6 +107,6 @@ function Contact() {
       </div>
     </div>
   );
-} 
+}
 
 export default Contact;

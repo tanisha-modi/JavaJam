@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
+    <>
     <div className="hero">
       <div className="upper">
         <h1>JavaJam</h1>
@@ -28,7 +29,26 @@ function Hero() {
           <img className="image1" src={image1} alt="" />
         </div>
       </div>
-    </div>
+       
+ 
+      </div>
+  <div className="video-container">
+  <div className="video-responsive">
+    <iframe
+      width="853"
+      height="480"
+      src={`https://www.youtube.com/embed/QJ8ewfNxC1I?autoplay=1`}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      title="Embedded youtube"
+      className="video"
+    />
+  </div>
+  </div>
+  <div className="steps-container">
+   
+  </div>
+      </>
   );
 }
 

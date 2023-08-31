@@ -39,7 +39,7 @@
     margin-top: 5rem;
     margin-left: 6rem;
     margin-right: 6rem;
-    height: 60vh;
+    /* height: 60vh; */
     /* flex-wrap: wrap; */
 }
 .text{
@@ -79,6 +79,10 @@ p{
 .link{
     color: #4E4F90;
 }
+.link:hover{
+    color: #4E4F90;
+    text-decoration: underline;
+}
 .imaging > img{
     height: 25rem;
     width: 40rem;
@@ -88,3 +92,71 @@ p{
       -webkit-box-shadow: 8px 8px 5px #00B4CF;
       -khtml-box-shadow: 8px 8px 5px #00B4CF;
 }
+/* .faltu{
+    height: 100vh;
+    background-image: url(../images/Rectangle\ 1.png);
+    background-repeat: no repeat;
+    background-size: cover;
+    transform: scaleY(-1);
+    padding: 80px; */
+    /* padding-bottom: 0; */
+/* }
+.video-responsive { */
+    /* position: absolute; */
+    /* transform: scaleY(-1); */
+    /* overflow: hidden;
+    padding-bottom: 10.25%;
+    position: relative;
+    height: 80vh; */
+    /* margin: 100px; */
+    /* border-radius: 50px;
+
+  } */
+  
+  /* .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  } */
+  .video-container{
+    height: 80vh;
+    background-image: url(../images/Rectangle\ 1.png);
+    background-repeat: no repeat;
+    background-size: cover;
+    transform: scaleY(-1);
+    padding: 5rem 10rem;
+    margin: -1px;
+  }
+  .video-responsive {
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    border-radius: 50px;
+    box-shadow: 8px 8px 5px #00B4CF;
+      -moz-box-shadow: 8px 8px 5px #00B4CF;
+      -webkit-box-shadow: 8px 8px 5px #00B4CF;
+      -khtml-box-shadow: 8px 8px 5px #00B4CF;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scaleY(-1);
+    border-radius: 50px;
+    
+  }
+  .steps-container{
+    height: 80vh;
+    background-image: url(../images/Rectangle\ 1.png);
+    background-repeat: no repeat;
+    background-size: cover;
+    /* transform: scaleY(-1); */
+    padding: 5rem 10rem;
+    margin: -1px;
+  }
