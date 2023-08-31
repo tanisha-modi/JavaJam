@@ -1,0 +1,50 @@
+.steps-container{
+    height: 120vh;
+    padding-top: 3rem;
+    background-image: url(../images/Rectangle\ 1.png);
+    background-repeat: no repeat;
+    background-size: cover;
+}
+.stepss{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+  }
+  .steps-container > h2{
+    font-family: 'Aclonica', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #4E4F90;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .steps-left > img{
+    /* position: relative; */
+    height: 100%;
+    width: 90%;
+    margin-top: 10%;
+  }
+  .s1  img, .s2 > img{
+    /* position: relative; */
+    height: 12rem;
+    width: 20rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 2px #00B4CF;
+      -moz-box-shadow: 4px 4px 2px #00B4CF;
+      -webkit-box-shadow: 4px 4px 2px #00B4CF;
+      -khtml-box-shadow: 4px 4px 2px #00B4CF;
+  }
+  step1{
+    margin-left: 3rem;
+    }
+    steps2{
+    margin-left: 2rem;
+
+}
+  .s1{
+    margin-bottom: 10rem;
+  }
+  .s2{
+      margin-top: 10rem;
+  }

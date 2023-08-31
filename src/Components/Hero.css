@@ -92,16 +92,11 @@ p{
       -webkit-box-shadow: 8px 8px 5px #00B4CF;
       -khtml-box-shadow: 8px 8px 5px #00B4CF;
 }
-  .steps-container{
-    height: 100vh;
-    background-image: url(../images/Rectangle\ 1.png);
-    background-repeat: no repeat;
-    background-size: cover;
-    padding: 0;
-  }
-  .steps-container > img{
-    margin-left: 5rem;
-    position: relative;
-    height: 120%;
-    width: 35%;
-  }
+
+.hr{
+    height: 0.5rem;
+    background-color: #4E4F90;
+}
+
+
+    
