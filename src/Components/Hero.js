@@ -1,8 +1,9 @@
 import React from "react";
 import "./Hero.css";
 import image1 from "../images/Hero.jpg";
-
 import { Link } from "react-router-dom";
+import steps from "../images/steps.png"
+import Video from './Video';
 
 function Hero() {
   return (
@@ -32,21 +33,10 @@ function Hero() {
        
  
       </div>
-  <div className="video-container">
-  <div className="video-responsive">
-    <iframe
-      width="853"
-      height="480"
-      src={`https://www.youtube.com/embed/QJ8ewfNxC1I?autoplay=1`}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      title="Embedded youtube"
-      className="video"
-    />
-  </div>
-  </div>
+  <Video/>
   <div className="steps-container">
-   
+
+   <img src={steps} alt="" />
   </div>
       </>
   );

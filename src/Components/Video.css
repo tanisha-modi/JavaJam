@@ -1,0 +1,30 @@
+.video-container{
+    height: 80vh;
+    background-image: url(../images/Rectangle\ 1.png);
+    background-repeat: no repeat;
+    background-size: cover;
+    transform: scaleY(-1);
+    padding: 5rem 10rem;
+    margin: -1px 0px;
+  }
+  .video-responsive {
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    border-radius: 50px;
+    box-shadow: 8px 8px 5px #00B4CF;
+      -moz-box-shadow: 8px 8px 5px #00B4CF;
+      -webkit-box-shadow: 8px 8px 5px #00B4CF;
+      -khtml-box-shadow: 8px 8px 5px #00B4CF;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scaleY(-1);
+    border-radius: 50px;
+    
+  }
