@@ -16,7 +16,7 @@
 }
 .logo{
     color: #00B4CF;
-    margin-left: 6rem;
+    margin-left: 3rem;
     border-radius: 25px;
     padding: 0.8rem 1.5rem;
     padding-top: 0.1rem ;
@@ -55,4 +55,27 @@
 a{
     color: white;
     text-decoration: none;
+}
+@media screen and (max-width: 420px){
+    .logo{
+        margin-left: 1rem;
+        border-radius: 25px;
+        padding: 0.8rem 1rem;
+        padding-top: 0.1rem ;
+    }
+    .downloadBtn{
+        color: white;
+        background-color: #00B4CF;
+        display: none;
+    }
+    .navBtn{
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 15px;
+        margin-right: 2px;
+        margin-left: 2px;
+        padding: 0.5rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
 }

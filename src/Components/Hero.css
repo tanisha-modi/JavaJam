@@ -92,6 +92,11 @@ p{
 }
 
 
+@media screen and  (max-width: 900px){
+    .lower{
+        flex-wrap: wrap;
+    }
+}
 @media screen and  (max-width: 420px){
     .lower{
         display: flex;
@@ -125,10 +130,9 @@ p{
         height: 20rem;
     width: 20rem;
     }
-  }
-@media screen and  (max-width: 900px){
-    .lower{
-        flex-wrap: wrap;
+    .text > span {
+        color: #00B4CF;
+        font-size: 1.2rem;
     }
   }
 

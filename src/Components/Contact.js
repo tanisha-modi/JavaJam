@@ -53,6 +53,7 @@ function Contact() {
             <div className="inputdata">
               <input
                 type="text"
+                id="user_name"
                 name="user_name"
                 value={name}
                 onChange={(event) => setName(event.target.value)}
@@ -65,6 +66,7 @@ function Contact() {
             <input
              className={email ? 'has-content' : ''}
               type="email"
+              id="user_email"
               name="user_email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
@@ -76,6 +78,7 @@ function Contact() {
             <div className="inputdata">
             <input
               type="text"
+              id="user_subject"
               name="user_subject"
               value={subject}
               onChange={(event) => setSubject(event.target.value)}
