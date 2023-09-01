@@ -41,7 +41,6 @@ function Contact() {
   };
   return (
     <div className="contact">
-      <div className="body">
         <div className="left">
           <img className="image1" src={contactImage1} alt="" />
         </div>
@@ -107,7 +106,6 @@ function Contact() {
             </button>
           </form>
         </div>
-      </div>
     </div>
   );
 }

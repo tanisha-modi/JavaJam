@@ -28,11 +28,11 @@ function Steps() {
             <div className="arr">
               <img className="flip arrow" src={a1} alt="" />
             </div>
-            <img className="step" src={m2} alt="" />
+            <img className="step" src={m3} alt="" />
           </div>
           <p>Step 1 : Open setup and Click next button on dialog box.</p>
           <div className="s1">
-            <img className="step" src={m3} alt="" />
+            <img className="step" src={m2} alt="" />
             <div className="arr">
               <img className="arrow" src={a1} alt="" />
             </div>

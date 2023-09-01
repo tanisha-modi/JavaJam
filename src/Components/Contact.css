@@ -2,13 +2,10 @@
   height: 100vh;
   background-image: url(../images/Rectangle\ 1.png);
   background-repeat: no repeat;
-  background-size: cover;
-}
-.body {
-  margin-right: 6rem;
-  margin-left: 8rem;
+  background-size: cover; 
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .left {
   z-index: 2;
@@ -122,4 +119,25 @@ textarea {
   cursor: pointer;
   color: white;
   background-color: #00b4cf;
+}
+
+@media screen and (max-width: 940px){
+  .right { 
+    margin-left: 0rem;  
+    padding: 0px 2rem;
+  }
+  .left{
+     display: none;
+  }
+}
+@media screen and (max-width: 420px){
+  .right {
+    margin-top: 10vh;
+    height: 85vh;
+    margin-left: 0rem;
+    padding: 0px 2rem;
+  }
+  .left{
+     display: none;
+  }
 }

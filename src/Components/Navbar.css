@@ -67,11 +67,11 @@ a{
         display: none;
     }
     .navBtn{
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0.5rem;
         margin-right: 0px;
         margin-left: 0px;
-        padding-left: 0.6rem;
-        padding-right: 0.6rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
     }
 }

@@ -1,11 +1,14 @@
-import React from "react";
+import React, {useRef} from "react";
 import "./Hero.css";
 import image1 from "../images/Hero.jpg";
-import { Link } from "react-router-dom";
 import Video from "./Video";
 import Steps from "./Steps"
 
 function Hero() {
+  const ref = useRef(null);
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
   return (
     <>
       <div className="hero">
@@ -27,9 +30,7 @@ function Hero() {
             </button>
             <p>
               Already downloaded?{" "}
-              <Link className="link" to="/steps">
-                <strong>Steps to install</strong>
-              </Link>
+              <strong className="link" onClick={() => handleClick()}>Steps to install</strong>
             </p>
           </div>
           <div className="imaging">
@@ -39,8 +40,8 @@ function Hero() {
       </div>
       <div className="hr"></div>
       <Video />
-      <div className="hr"></div>
-      <Steps/>
+      <div ref={ref} className="hr"></div>
+      <Steps />
       <div className="hr"></div>
     </>
   );
