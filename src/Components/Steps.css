@@ -61,3 +61,39 @@
   .steps-right p{
     font-size: 2rem;
   }
+
+
+  /* ---------------------------------------- */
+
+  @media screen and  (max-width: 900px){
+    .steps-left > img{
+      display: none;
+    }
+    .steps-right p{
+      font-size: 1.8rem;
+    }
+    .s1{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .s1 > img{
+      height: 14rem;
+      width: 20rem;
+    }
+  }
+  @media screen and  (max-width: 420px){
+    .steps-left > img{
+      display: none;
+    }
+    .arr{
+      display: none;
+    }
+    .steps-right p{
+      font-size: 1.4rem;
+    }
+    .s1 > img{
+      height: 10rem;
+      width: 15rem;
+    }
+  }

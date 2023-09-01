@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
 .hero{
-    /* height: 100vh; */
     background-image: url(../images/Rectangle\ 1.png);
     background-repeat: no repeat;
     background-size: cover;
     padding: 20px;
     padding-bottom: 5rem;
-    /* background-image: linear-gradient( 
-        135deg,
-        rgb(79, 80, 146, 0.5) 0%,
-        rgb(0, 181, 209, 0.5) 90%
-    ); */
 }
 .upper{
     padding-top: 5rem;
@@ -31,7 +25,6 @@
     margin-top: 10px;
     color: #00B4CF;
     font-size: 1.8rem;
-    /* font-weight: 800; */
 }
 .lower{
     display: flex;
@@ -41,8 +34,6 @@
     margin-top: 5rem;
     margin-left: 6rem;
     margin-right: 6rem;
-    /* height: 60vh; */
-    /* flex-wrap: wrap; */
 }
 .text{
     margin: 10px;
@@ -100,5 +91,45 @@ p{
     background-color: #4E4F90;
 }
 
+
+@media screen and  (max-width: 420px){
+    .lower{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 0;
+        margin-top: 4rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    .text{
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .text > h2{
+        color: #00B4CF;
+        font-size: 2.5rem;
+    }
+    .upper > h1{
+        font-size: 4rem;
+        text-shadow: 2px 2px #00B4CF;
+    }
+    .lower{
+        flex-wrap: wrap;
+    }
+    .imaging > img{
+        height: 20rem;
+    width: 20rem;
+    }
+  }
+@media screen and  (max-width: 900px){
+    .lower{
+        flex-wrap: wrap;
+    }
+  }
 
     
