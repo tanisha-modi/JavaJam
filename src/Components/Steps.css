@@ -55,16 +55,18 @@
     width: 25rem;
     border-radius: 15px;
     margin-left: 20px;
-    box-shadow: 4px 4px 2px #00B4CF;
-      -moz-box-shadow: 4px 4px 2px #00B4CF;
-      -webkit-box-shadow: 4px 4px 2px #00B4CF;
-      -khtml-box-shadow: 4px 4px 2px #00B4CF;
+    box-shadow: 4px 4px 2px rgb(153, 153, 153);
+      -moz-box-shadow: 4px 4px 2px rgb(153, 153, 153);
+      -webkit-box-shadow: 4px 4px 2pxr gb(153, 153, 153);
+      -khtml-box-shadow: 4px 4px 2px rgb(153, 153, 153);
   }
   .steps-right p{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: rgb(88, 87, 87);
+    margin-bottom: 5px;
   }
   .s4{
-    margin-left: 50%;
+    margin-left: 52%;
   }
   .s3{
     margin-left: 2%;
