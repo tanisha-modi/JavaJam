@@ -16,28 +16,28 @@ function Steps() {
           <img src={steps} alt="" />
         </div>
         <div className="steps-right">
-          <p>Step 1 : Open setup and Click next button on dialog box.</p>
+          <p className="s3">Step 1 : Open setup.exe and Click on next button.</p>
           <div className="s1">
             <img className="step" src={m1} alt="" />
             <div className="arr">
               <img className="arrow" src={a1} alt="" />
             </div>
           </div>
-          <p>Step 1 : Open setup and Click next button on dialog box.</p>
+          <p className="s4" >Step 2 : Click on install button.</p>
           <div className="s1">
             <div className="arr">
               <img className="flip arrow" src={a1} alt="" />
             </div>
             <img className="step" src={m3} alt="" />
           </div>
-          <p>Step 1 : Open setup and Click next button on dialog box.</p>
+          <p className="s3">Step 3 : Wait till the app is installing.</p>
           <div className="s1">
             <img className="step" src={m2} alt="" />
             <div className="arr">
               <img className="arrow" src={a1} alt="" />
             </div>
           </div>
-          <p>Step 1 : Open setup and Click next button on dialog box.</p>
+          <p className="s4">Step 4 : Click on finish.</p>
           <div className="s1">
             <div className="arr"></div>
             <img className="step" src={m4} alt="" />
