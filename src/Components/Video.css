@@ -13,10 +13,10 @@
     height: 80vh;
     transform: scaleY(-1);
     border-radius: 50px;
-    box-shadow: 8px 8px 5px #00B4CF;
-      -moz-box-shadow: 8px 8px 5px #00B4CF;
-      -webkit-box-shadow: 8px 8px 5px #00B4CF;
-      -khtml-box-shadow: 8px 8px 5px #00B4CF;
+    box-shadow: 6px 6px 5px #00B4CF;
+      -moz-box-shadow: 6px 6px 5px #00B4CF;
+      -webkit-box-shadow: 6px 6px 5px #00B4CF;
+      -khtml-box-shadow: 6px 6px 5px #00B4CF;
   }
   
   .video-responsive iframe {

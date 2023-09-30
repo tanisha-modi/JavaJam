@@ -40,6 +40,7 @@ function Contact() {
     setTextArea("");
   };
   return (
+    <>
     <div className="contact">
         <div className="left">
           <img className="image1" src={contactImage1} alt="" />
@@ -107,6 +108,8 @@ function Contact() {
           </form>
         </div>
     </div>
+        <div className="hr"></div>
+        </>
   );
 }
 
